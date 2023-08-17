@@ -37,9 +37,9 @@ button {
   margin-top: 10px; /* Espacio entre el último input y el botón */
   /* cursor: pointer; */
   font-size: 16px;
-  /* transition: background-color 0.3s ease; */
+  transition: background-color 0.3s ease; 
 }
-/* 
+
  button:hover {
   background-color: #0056b3; 
-} */
+} 
