@@ -25,11 +25,9 @@ function App() {
 
   const validatePassword = (password) => {
     const withoutSpaces = password.trim();
-
     const passwordAsArray = withoutSpaces.split("");
-    const hasNumber = passwordAsArray.some((character) => !isNaN(character));
-
-    if (withoutSpaces.length > 6 && hasNumber) {
+    
+    if (withoutSpaces.length > 5 ) {
       return true;
     } else {
       return false;
@@ -52,7 +50,7 @@ function App() {
     const isEdadValid = validateEdad(edad);
 
     if (!isPasswordValid || !isUsernameValid || !isEdadValid) {
-      alert("Alguno de los datos ingresados no son correctos");
+      alert("Por favor chequea que la información sea correcta.");
     } else {
       setShowWelcomeCard(true);
     }
