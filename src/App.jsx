@@ -16,8 +16,7 @@ function App() {
   };
 
   const validateColor = (color) => {
-    const withoutSpaces = color.trim();
-    return withoutSpaces.length > 3;
+      return /^[^\s]/.test(color) && color.length > 3;
   };
 
   const onSubmitForm = (e) => {
